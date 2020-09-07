@@ -1,0 +1,7 @@
+name: Comments Book
+type: module
+description: Модуль коментарів
+package: CommentsBook
+author: Virek
+core: 8.x
+core_version_requirement: ^8 || ^9

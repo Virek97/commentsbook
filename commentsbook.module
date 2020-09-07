@@ -1,0 +1,33 @@
+<?php
+
+  function commentsbook_theme() {
+    return [
+      'commentsbook_theme' => [
+        'variables' => [
+          'title' => 'title',
+          'data' => 'data',
+          'comment_form' => 'comment_form',
+          'base_url' => 'base_url',
+        ],
+      ],
+      'commentsbook_blocks_theme' => [
+        'variables' => [
+          'data' => 'data',
+          'base_url' => 'base_url',
+        ]
+      ],
+      'commentsbook_admin_theme' => [
+        'variables' => [
+          'data' => 'data',
+          'base_url' => 'base_url',
+        ]
+      ],
+      'commentsbook_edit_theme' => [
+        'variables' => [
+          'title' => 'title',
+          'edit_comment_form' => 'edit_comment_form',
+          'base_url' => 'base_url',
+        ]
+      ]
+    ];
+  }

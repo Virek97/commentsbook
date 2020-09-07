@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  padding-bottom: 30px;
+}
+
+div.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1.title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 40px 0 20px;
+}
+
+div[role=contentinfo] {
+  text-align: center;
+  padding: 15px 30px;
+  background-color: #ffd23f;
+}
+
+
+
+
+
+
+
+
+section.content_section div.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+section.content_section div.data div.review_block {
+  width: 700px;
+  border: 2px solid #000;
+  padding: 20px 50px;
+  margin-bottom: 30px;
+}
+section.content_section div.data div.review_block div.admin_block {
+  margin-bottom: 10px;
+}
+section.content_section div.data div.review_block div.admin_block a {
+  font-size: 14px;
+  border-left: 1px solid #000;
+  padding: 0 5px 0 7px;
+}
+section.content_section div.data div.review_block div.admin_block a:first-child {
+  color: red;
+  border-left: 0;
+  padding: 0 3px 0 0;
+}
+section.content_section div.data div.review_block p.review_name {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+section.content_section div.data div.review_block p.review_email {
+  margin: 0;
+}
+section.content_section div.data div.review_block div.author_info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #000;
+}
+section.content_section div.data div.review_block div.author_info div.info_block {
+  display: flex;
+  align-items: center;
+}
+section.content_section div.data div.review_block div.author_info img.avatar_photo {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+section.content_section div.data div.review_block img.review_photo {
+  width: 100%;
+  margin-top: 15px;
+}
+section.content_section div.data div.review_block p.review_text {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+section.content_section div.data a.add_review {
+  font-size: 20px;
+  color: #fff4f4;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: #607ef4;
+  transition: 0.2s;
+}
+section.content_section div.data a.add_review:hover {
+  background-color: #bf1010;
+}
+
+section.content_section div.data div.empty_reviews {
+  background-color: #ffd23f;
+  padding: 20px 40px;
+  margin: 50px 0;
+}
+section.content_section div.data div.empty_reviews p {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div#comments_form_block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+div#comments_form_block form.comments-form {
+  width: 100%;
+  max-width: 500px;
+}
+div#comments_form_block form.comments-form div.js-form-item {
+  margin-bottom: 5px;
+}
+div#comments_form_block form.comments-form div.validation-message {
+  color: red;
+  margin-bottom: 12px;
+}
+div#comments_form_block form.comments-form div.js-form-item input,
+div#comments_form_block form.comments-form div.js-form-item textarea {
+  width: 100%;
+  margin-top: 3px;
+  padding: 5px 10px;
+  outline: none;
+}
+div#comments_form_block form.comments-form input#edit-submit {
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #fff4f4;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 15px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #607ef4;
+  background-image: none;
+  outline: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+div#comments_form_block form.comments-form div.js-form-item label#edit-avatar-photo--label,
+div#comments_form_block form.comments-form div.js-form-item label#edit-comment-image--label {
+  font-size: 20px;
+  font-weight: 600;
+}
+div#comments_form_block form.comments-form div.js-form-item div#edit-comment-image--description,
+div#comments_form_block form.comments-form div.js-form-item div#edit-avatar-photo--description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+div#comments_form_block form.comments-form input#edit-submit:hover {
+  background-color: #bf1010;
+}
+div#form-system-messages div[role=contentinfo] {
+  padding: 10px 30px;
+}
+div#form-system-messages div[role=contentinfo] ul {
+  list-style-type: none;
+}
+
+
+footer {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
+.page-content {
+  margin: 0;
+}

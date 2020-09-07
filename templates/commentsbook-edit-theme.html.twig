@@ -1,0 +1,11 @@
+<div class="wrapper">
+  {{ attach_library('commentsbook/scripts_commentsbook_home') }}
+  <section class="content_section">
+    <h1 class="title">{{ data.title }}</h1>
+    <div id="form-system-messages"></div>
+    <div id="comments_form_block">
+      {{ edit_comment_form }}
+    </div>
+  </section>
+</div>
+{% include '@commentsbook/parts/footer.html.twig' %}

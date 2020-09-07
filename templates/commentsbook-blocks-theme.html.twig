@@ -1,0 +1,35 @@
+  {% if data.info %}
+    {% for w in data.info %}
+      <div class="review_block">
+        {% if is_admin %}
+          <div class="admin_block">
+            <a href="{{ base_url }}/admin/comments-book/delete/{{ w.id }}">Видалити</a>
+            <a href="{{ base_url }}/admin/comments-book/edit/{{ w.id }}">Редагувати</a>
+          </div>
+        {% endif %}
+        <div class="author_info">
+          <div class="info_block">
+            {% if w.avatar_photo != 'default_avatar.png' %}
+              <img src="{{ base_url }}/sites/default/files/comments_images/avatars/{{ w.avatar_photo }}" alt="{{ w.avatar_photo }}" class="avatar_photo">
+            {% else %}
+              <img src="{{ base_url }}/modules/custom/commentsbook/images/{{ w.avatar_photo }}" alt="{{ w.avatar_photo }}" class="avatar_photo">
+            {% endif %}
+            <div class="text_block">
+              <p class="review_name">{{ w.name }}</p>
+              <p class="review_email">{{ w.email }}</p>
+              <p class="review_email">{{ w.phone_number }}</p>
+            </div>
+          </div>
+          <p class="date">{{ w.date }}</p>
+        </div>
+        <p class="review_text">{{ w.comment_text | raw }}</p>
+        {% if w.comment_image %}
+          <img src="{{ base_url }}/sites/default/files/comments_images/{{ w.comment_image }}" alt="{{ w.comment_image }}" class="review_photo">
+        {% endif %}
+      </div>
+    {% endfor %}
+  {% else %}
+    <div class="empty_reviews">
+      <p>Список коментарів порожній!</p>
+    </div>
+  {% endif %}

@@ -1,0 +1,23 @@
+commentsbook.comments_page:
+  path: '/comments-book'
+  defaults:
+    _title: 'Коментарі'
+    _controller: '\Drupal\commentsbook\Controller\Comments::get_data'
+  requirements:
+    _access: 'TRUE'
+
+commentsbook.delete_comment:
+  path: 'admin/comments-book/delete/{id}'
+  defaults:
+    _controller: '\Drupal\commentsbook\Controller\DeleteComment::delete'
+  requirements:
+    _permission: 'administer site configuration'
+    id: \d+
+
+commentsbook.edit_comment:
+  path: 'admin/comments-book/edit/{id}'
+  defaults:
+    _controller: '\Drupal\commentsbook\Controller\Comments::edit'
+  requirements:
+    _permission: 'administer site configuration'
+    id: \d+

@@ -1,0 +1,10 @@
+scripts_commentsbook_home:
+  version: 1.0
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/main.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

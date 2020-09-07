@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the commentsbook module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function commentsbook_schema() {
+
+  $schema['custom_comments'] = [
+    'description' => 'CommentsBook database table',
+    'fields'      => [
+      'id'   => [
+        'description' => 'ID',
+        'type'        => 'serial',
+        'length'      => 10,
+        'unsigned'    => TRUE,
+        'not null'    => TRUE,
+      ],
+      'name' => [
+        'description' => 'User name',
+        'type'        => 'varchar',
+        'length'      => 100,
+        'not null'    => TRUE,
+      ],
+      'email' => [
+        'description' => 'Contact: E-mail address ',
+        'type'        => 'varchar',
+        'length'      => 100,
+        'not null'    => TRUE,
+      ],
+      'phone_number' => [
+        'description' => 'Contact: phone number',
+        'type'        => 'varchar',
+        'length'      => 100,
+        'not null'    => TRUE,
+      ],
+      'comment_text' => [
+        'description' => 'Comment text',
+        'type'        => 'text',
+        'not null'    => TRUE,
+        'size'        => 'big',
+      ],
+      'avatar_photo'  => [
+        'description' => 'Avatar',
+        'type'        => 'varchar',
+        'length'      => 100,
+        'not null'    => TRUE,
+      ],
+      'comment_image'  => [
+        'description' => 'Image to comment',
+        'type'        => 'varchar',
+        'length'      => 100,
+        'not null'    => TRUE,
+      ],
+      'date' => [
+        'description' => 'Create date',
+        'type'        => 'varchar',
+        'length'      => 100,
+        'not null'    => TRUE,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}
